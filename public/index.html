@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <base href="%PUBLIC_URL%/" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    
+    <title>Demo ReactJS</title>
+
+    <!-- CSS -->
+    <!--<link type="text/css" rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="%PUBLIC_URL%/assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="%PUBLIC_URL%/assets/css/fonts.googleapis.com.css" />
+    <link type="text/css" rel="stylesheet" href="%PUBLIC_URL%/assets/css/ace.min.css" />
+    <link type="text/css" rel="stylesheet" href="%PUBLIC_URL%/assets/css/ace-skins.min.css" />
+    <link type="text/css" rel="stylesheet" href="%PUBLIC_URL%/assets/css/ace-rtl.min.css" />
+    <link type="text/css" rel="stylesheet" href="%PUBLIC_URL%/assets/css/styles-app-loading.css" />-->
+
+    <!--<style type="text/css">
+      body, html {
+        height: 100%;
+      }
+  
+      .app-loading {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+  
+        .app-loading .spinner {
+          height: 200px;
+          width: 200px;
+          animation: rotate 2s linear infinite;
+          transform-origin: center center;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+  
+          .app-loading .spinner .path {
+            stroke-dasharray: 1, 200;
+            stroke-dashoffset: 0;
+            animation: dash 1.5s ease-in-out infinite;
+            stroke-linecap: round;
+            stroke: #ddd;
+          }
+  
+      @keyframes rotate {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+  
+      @keyframes dash {
+        0% {
+          stroke-dasharray: 1, 200;
+          stroke-dashoffset: 0;
+        }
+  
+        50% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -35px;
+        }
+  
+        100% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -124px;
+        }
+      }
+    </style>-->
+  </head>
+  <body class="no-skin">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <!--<div className="app-loading">
+      <div className="logo" />
+      <svg className="spinner" viewBox="25 25 50 50">
+        <circle className="path" cx={50} cy={50} r={20} fill="none" strokeWidth={2} strokeMiterlimit={10} />
+      </svg>
+    </div>-->
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <!-- JS -->
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/jquery-2.1.4.min.js" ></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/ace-extra.min.js" ></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/jquery-ui.custom.min.js" ></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/jquery.ui.touch-punch.min.js" ></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/jquery.easypiechart.min.js" ></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/jquery.sparkline.index.min.js" ></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/jquery.flot.min.js" ></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/jquery.flot.pie.min.js" ></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/jquery.flot.resize.min.js" ></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/ace-elements.min.js" ></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/jquery.colorbox.min.js" ></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/ace.min.js" ></script>
+
+    <!--<script type="text/javascript" src="%PUBLIC_URL%/node_modules/jquery/dist/jquery.min.js" ></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/node_modules/froala-editor/js/froala_editor.pkgd.min.js" ></script>-->
+
+    <script type="text/javascript">
+      try { ace.settings.loadState('main-container') } catch (e) { }
+    </script>
+    <script type="text/javascript">
+      try { ace.settings.loadState('sidebar') } catch (e) { }
+    </script>
+  </body>
+</html>
