@@ -18,9 +18,11 @@ export default class App extends Component {
       <Router basename={baseUrl}>
         <Layout>
           <Switch>
-            <Route exact path='/' component={() => <Home>Trang Chủ</Home>} />
+            <Route exact path='/?limits=10' component={({history}) => <Home history={history}/>} />
+            <Route exact path='/sale-order/create' component={Action_SaleOrder} />
             <Route exact path='/sale-order/:id' component={ShowSaleOrder} />
             <Route exact path='/sale-order/:id/edit' component={Action_SaleOrder} />
+            
             <Route exact component={Home}></Route>
           </Switch>
         </Layout>

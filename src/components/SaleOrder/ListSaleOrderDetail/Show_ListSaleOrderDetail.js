@@ -1,6 +1,21 @@
 import React from 'react';
 import ShowSaleOrderDetailItem from './../SaleOrderDetail/Show_SaleOrderDetailItem'
-const Show_ListSaleOrderDetail =()=>{
+const Show_ListSaleOrderDetail =({lstSaleOrder})=>{
+    
+    
+    const renderListSaleOrderDetail=(list)=>{
+        var result= null;
+        if(list==null){
+            return null;
+        }
+
+        result=list.map((item,index)=>{
+            return (<ShowSaleOrderDetailItem key={index} saleOrderDetail={item}/>)
+        })
+        return result;
+
+
+    }
     return (
         <>
         <table className="table">
@@ -17,9 +32,7 @@ const Show_ListSaleOrderDetail =()=>{
                 </tr>
             </thead>
             <tbody>
-                <ShowSaleOrderDetailItem />
-                <ShowSaleOrderDetailItem />
-                <ShowSaleOrderDetailItem />
+                {renderListSaleOrderDetail(lstSaleOrder)}
             </tbody>
         </table>
         </>

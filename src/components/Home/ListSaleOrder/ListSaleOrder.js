@@ -1,11 +1,21 @@
 import React from 'react';
 import SaleOrderItem from './SaleOrderItem'
-const ListSaleOrder =()=>{
+
+
+const ListSaleOrder =({listSaleOrder})=>{
+    
+    const RenderListSaleOrder=(list)=>{
+        var result=null;
+        result=list.map((item,index)=>{
+            return (<SaleOrderItem key={index} saleOrderItem={item}/>)
+        })
+        return result;
+    }
     return (
         <>
-        <table class="table " >
+        <table className="table " >
             <thead>
-                <tr class="table-success">
+                <tr className="table-success">
                     <th scope="col">Mã đơn hàng</th>
                     <th scope="col">Tên khách hàng</th>
                     <th scope="col">Tổng tiền</th>
@@ -14,9 +24,7 @@ const ListSaleOrder =()=>{
                 </tr>
             </thead>
             <tbody>
-                <SaleOrderItem />
-                <SaleOrderItem />
-                <SaleOrderItem />
+                {RenderListSaleOrder(listSaleOrder)}
             </tbody>
         </table>
         </>

@@ -4,12 +4,8 @@ var initialState=false;
 
 const StatusReducer=(state=initialState,action)=>{
     switch(action.type){
-        case types.TOGGLE_FORM_EDIT_ORDER_DETAIL:
+        case types.ON_LOAD_PAGE_HOME:
             return !state;
-        case types.OPEN_FORM_EDIT_ORDER_DETAIL:
-            return true;
-        case types.CLOSE_FORM_EDIT_ORDER_DETAIL:
-            return false;
         default:
             return state;
     }

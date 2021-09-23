@@ -1,10 +1,16 @@
 import {combineReducers} from 'redux';
 import status from './status';
-import ListSaleOrder from './ListSaleOrder';
+import listSaleOrder from './ListSaleOrder';
+import saleOrder from './SaleOrder';
+import saleOrderDetail from './SaleOrderDetail';
+import onLoad from './onLoadHome';
 
 const myReducer =combineReducers({
     status,
-    ListSaleOrder
+    listSaleOrder,
+    saleOrder,
+    saleOrderDetail,
+    onLoad
 
 })
 
